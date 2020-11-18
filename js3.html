@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS setTimeOut clearTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        <p>Time now is <span id="time"></span></p>
+    </div>
+    <script>
+    //    console.log("This is example no. 3");
+    //     function greet(name , byetext){
+    //    console.log("Hello Good Morning"  +name+ " " +byetext);
+    //   }
+    //    timeout = setTimeout(greet, 2000,"Aman", "Take Care");
+    //    console.log(setTimeout);
+    //    clearTimeout (timeout);
+    // intervalID = setInterval(greet, 1000, "Aman", "Keep Going");
+    // clearInterval(intervalID);
+    function showtime(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML= time;
+    }
+    setInterval(showtime, 1000);
+    </script>
+</body>
+</html>
