@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array</title>
+</head>
+<body>
+    <dic class="container"><h2>This is array sort practice</h2></dic>
+    <div class="content"><span id="data"></span><br>
+    <span id="data1"></span><br>
+    <span id="data2"></span><br>
+    </div>
+    <!-- <div class="content"><button onclick="myfunction()">Click to sort the array</button></div> -->
+    <script>
+        // let fruits = ["Mango","orange","Apple","Banana","Kiwi"];
+        // let fruits = ["1","32","12","200","100","100001"];
+        // console.log(data1.innerHTML=myArrayMin(fruits));
+        // console.log(data.innerHTML = fruits);
+    //     function myArrayMin(arr){
+    //         // fruits.sort(function(a,b){return(a-b)});
+    //         // fruits.sort(function(a,b){return(b-a)}); 
+    //         // fruits.reverse();
+    //         return Math.min.apply(null,arr);
+    //         //  console.log(data1.innerHTML=myArraymaxx(fruits));
+    //     }
+    let dt ;
+    switch (new Date().getDay()) {
+            case 0:
+            dt = "Sunday";
+            break;
+            case 1:
+            dt= "Monday";
+            break;
+            case 2:
+            dt= "Tuesday";
+            break;
+            case 3:
+            dt= "Wednesday";
+            break;
+            case 4:
+            dt= "Thursday";
+            break;
+            case 5:
+            dt= "Friday";
+            break;
+            case 6:
+            dt= "Saturday";
+            break;
+    }
+    console.log(data.innerHTML = "Today is:"+ dt);
+    let d = new Date();
+    console.log(data1.innerHTML = "The time is:"+ d);
+    let text="", i=0;
+    while (i<5) {
+        text += "<br> The number is "+ i;
+        i++;
+    }
+    console.log(data2.innerHTML=text);
+     </script>
+</body>
+</html>
